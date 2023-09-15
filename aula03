@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula03</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 1px solid black;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .container .item{
+            border: 1px solid red;
+            width: 20px;
+            height: 30px;
+            padding: 5px;
+        }
+
+        .grow_1{
+            flex-grow: 1;
+        }
+        .grow_1{
+            flex-grow: 2;
+        }
+        .grow_1{
+            flex-grow: 3;
+        }
+        .basis_auto{
+            flex-grow: 1;
+            flex-basis: content;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>aula03 - flexbox - itens </h1>
+    <section class="container justify-around aling-center">
+        <div class="item grow_1">1</div>
+        <div class="item grow_3">2</div>
+        <div class="item grow_1">3</div>
+       
+   
+</body>
+</html>
+
