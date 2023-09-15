@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula02</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 1px solid black;
+            width: 90%;
+            height: 100px;
+            display: flex;
+            flex-flow: row wrap;
+    
+        }
+        .container2{
+            border: 1px solid black;
+            width: 30%;
+            height: 100px;
+            display: flex;
+            flex-wrap: row wrap;
+        }
+        /*aling-center*/
+        .aling-content-start{
+            align-content: start;
+        }
+        .aling-content-center{
+            align-content: center;
+        }
+        .aling-content-end{
+            align-content: end;
+        }
+        .aling-content-stretch{
+            align-content: stretch;
+        }
+       
+        /*propriedades de items*/
+        .container .item{
+            border: 1px solid red;
+            width: 20px;
+            height: 30px;
+            padding: 5px;
+        }
+        .container2 .item2{
+            border: 1px solid red;
+            width: 30px;
+            height: 20px;
+            padding: 5px;
+        }
+        /* order*/
+        .item:nth-of-type(1){
+            order: 2
+        }
+        .item:nth-of-type(3){
+            order: 3
+        }
+        .item:nth-of-type(3){
+            order: 1
+        }
+        .item:nth-of-type(4){
+            order: 4
+        }
+        .item:nth-of-type(5){
+            order: 5
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>aula01 - flexbox</h1>
+    <div class="container justify-around aling-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h2>aling-content</h2>
+    <section class="container2 aling-content-center">
+        <div class="item2">1</div>
+        <div class="item2">2</div>
+        <div class="item2">3</div>
+        <div class="item2">4</div>
+        <div class="item2">5</div>
+       
+   
+</body>
+</html>
+
